@@ -41,10 +41,10 @@ export default function Header() {
               <input
                 type='text'
                 className='flex-grow border-none bg-transparent px-3 py-2 text-black outline-none'
-                placeholder='Free Ship Đơn Từ 0Đ'
+                placeholder='Tìm sản phẩm ,thương hiệu, tên shop '
                 {...register('name')}
               />
-              <button className='bg-orange flex-shrink-0 rounded-sm px-6 py-2 hover:opacity-90'>
+              <button className='flex-shrink-0 rounded-sm bg-red-600 px-6 py-2 hover:opacity-90'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -95,7 +95,7 @@ export default function Header() {
                         </div>
                         <Link
                           to={path.cart}
-                          className='bg-orange rounded-sm px-4 py-2 capitalize text-white hover:bg-opacity-90'
+                          className='rounded-sm bg-red-600 px-4 py-2 capitalize text-white hover:bg-opacity-90'
                         >
                           Xem giỏ hàng
                         </Link>

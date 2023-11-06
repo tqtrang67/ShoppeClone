@@ -7,13 +7,7 @@ module.exports = {
   corePlugins: {
     container: false
   },
-  theme: {
-    extend: {
-      colors: {
-        orange: '#ee4d2d'
-      }
-    }
-  },
+  theme: {},
   plugins: [
     plugin(function ({ addComponents, theme }) {
       addComponents({
