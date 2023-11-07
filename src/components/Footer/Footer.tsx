@@ -25,7 +25,7 @@ export default function Footer() {
           <div className='mt-2'>
             Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/10/2023
           </div>
-          <div className='mt-2'>© 2023 - Bản quyền thuộc về Công ty TNHH TQT</div>
+          <div className='mt-2'>© 2023 - Bản quyền thuộc về Công ty TNHH TPT</div>
         </div>
       </div>
     </footer>

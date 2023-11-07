@@ -174,7 +174,7 @@ export default function ProductDetail() {
                         alt={product.name}
                         className='absolute left-0 top-0 h-full w-full cursor-pointer bg-white object-cover'
                       />
-                      {isActive && <div className='border-orange absolute inset-0 border-2' />}
+                      {isActive && <div className='absolute inset-0 border-2 border-oranges' />}
                     </div>
                   )
                 })}
@@ -199,10 +199,10 @@ export default function ProductDetail() {
               <h1 className='text-xl font-medium uppercase'>{product.name}</h1>
               <div className='mt-8 flex items-center'>
                 <div className='flex items-center'>
-                  <span className='border-b-orange text-orange mr-1 border-b'>{product.rating}</span>
+                  <span className='mr-1 border-b border-b-oranges text-oranges'>{product.rating}</span>
                   <ProductRating
                     rating={product.rating}
-                    activeClassname='fill-orange text-orange h-4 w-4'
+                    activeClassname='fill-yellow-300 text-yellow h-4 w-4'
                     nonActiveClassname='fill-gray-300 text-gray-300 h-4 w-4'
                   />
                 </div>
@@ -214,8 +214,8 @@ export default function ProductDetail() {
               </div>
               <div className='mt-8 flex items-center bg-gray-50 px-5 py-4'>
                 <div className='text-gray-500 line-through'>₫{formatCurrency(product.price_before_discount)}</div>
-                <div className='text-orange ml-3 text-3xl font-medium'>₫{formatCurrency(product.price)}</div>
-                <div className='ml-4 rounded-sm bg-red-600 px-1 py-[2px] text-xs font-semibold uppercase text-white'>
+                <div className='ml-3 text-3xl font-medium text-oranges'>₫{formatCurrency(product.price)}</div>
+                <div className='ml-4 rounded-sm bg-oranges px-1 py-[2px] text-xs font-semibold uppercase text-white'>
                   {rateSale(product.price_before_discount, product.price)} giảm
                 </div>
               </div>
@@ -235,14 +235,14 @@ export default function ProductDetail() {
               <div className='mt-8 flex items-center'>
                 <button
                   onClick={addToCart}
-                  className='border-orange text-orange flex h-12 items-center justify-center rounded-sm border bg-red-600/10 px-5 capitalize shadow-sm hover:bg-red-600/5'
+                  className='flex h-12 items-center justify-center rounded-sm border border-oranges bg-none px-5 capitalize text-oranges shadow-sm hover:opacity-90'
                 >
                   <svg
                     enableBackground='new 0 0 15 15'
                     viewBox='0 0 15 15'
                     x={0}
                     y={0}
-                    className='stroke-orange text-orange mr-[10px] h-5 w-5 fill-current'
+                    className='mr-[10px] h-5 w-5 fill-current stroke-oranges text-oranges'
                   >
                     <g>
                       <g>
@@ -264,7 +264,7 @@ export default function ProductDetail() {
                 </button>
                 <button
                   onClick={buyNow}
-                  className='fkex ml-4 h-12 min-w-[5rem] items-center justify-center rounded-sm bg-red-600 px-5 capitalize text-white shadow-sm outline-none hover:bg-red-600/90'
+                  className='fkex ml-4 h-12 min-w-[5rem] items-center justify-center rounded-sm bg-oranges px-5 capitalize text-white shadow-sm outline-none hover:opacity-90'
                 >
                   Mua ngay
                 </button>

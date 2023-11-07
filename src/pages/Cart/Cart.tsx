@@ -155,12 +155,12 @@ export default function Cart() {
                       <div className='flex flex-shrink-0 items-center justify-center pr-3'>
                         <input
                           type='checkbox'
-                          className='accent-orange h-5 w-5'
+                          className='h-5 w-5 accent-oranges'
                           checked={isAllChecked}
                           onChange={handleCheckAll}
                         />
                       </div>
-                      <div className='flex-grow text-black'>Sản phẩm</div>
+                      <div className='flex-grow  text-black'>Sản phẩm</div>
                     </div>
                   </div>
                   <div className='col-span-6'>
@@ -184,7 +184,7 @@ export default function Cart() {
                             <div className='flex flex-shrink-0 items-center justify-center pr-3'>
                               <input
                                 type='checkbox'
-                                className='accent-orange h-5 w-5'
+                                className='h-5 w-5 accent-oranges'
                                 checked={purchase.checked}
                                 onChange={handleCheck(index)}
                               />
@@ -246,14 +246,14 @@ export default function Cart() {
                               />
                             </div>
                             <div className='col-span-1'>
-                              <span className='text-orange'>
+                              <span className='text-oranges'>
                                 ₫{formatCurrency(purchase.product.price * purchase.buy_count)}
                               </span>
                             </div>
                             <div className='col-span-1'>
                               <button
                                 onClick={handleDelete(index)}
-                                className='hover:text-orange bg-none text-black transition-colors'
+                                className='bg-none text-black transition-colors hover:opacity-90'
                               >
                                 Xóa
                               </button>
@@ -271,7 +271,7 @@ export default function Cart() {
                 <div className='flex flex-shrink-0 items-center justify-center pr-3'>
                   <input
                     type='checkbox'
-                    className='accent-orange h-5 w-5'
+                    className='h-5 w-5 accent-oranges'
                     checked={isAllChecked}
                     onChange={handleCheckAll}
                   />
@@ -288,15 +288,15 @@ export default function Cart() {
                 <div>
                   <div className='flex items-center sm:justify-end'>
                     <div>Tổng thanh toán ({checkedPurchasesCount} sản phẩm):</div>
-                    <div className='text-orange ml-2 text-2xl'>₫{formatCurrency(totalCheckedPurchasePrice)}</div>
+                    <div className='ml-2 text-2xl text-oranges'>₫{formatCurrency(totalCheckedPurchasePrice)}</div>
                   </div>
                   <div className='flex items-center text-sm sm:justify-end'>
                     <div className='text-gray-500'>Tiết kiệm</div>
-                    <div className='text-orange ml-6'>₫{formatCurrency(totalCheckedPurchaseSavingPrice)}</div>
+                    <div className='ml-6 text-oranges'>₫{formatCurrency(totalCheckedPurchaseSavingPrice)}</div>
                   </div>
                 </div>
                 <Button
-                  className='mt-5 flex h-10 w-52 items-center justify-center bg-red-500 text-sm uppercase text-white hover:bg-red-600 sm:ml-4 sm:mt-0'
+                  className='mt-5 flex h-10 w-52 items-center justify-center bg-oranges text-sm uppercase text-white hover:opacity-90 sm:ml-4 sm:mt-0'
                   onClick={handleBuyPurchases}
                   disabled={buyProductsMutation.isLoading}
                 >
@@ -312,7 +312,7 @@ export default function Cart() {
             <div className='mt-5 text-center'>
               <Link
                 to={path.home}
-                className=' rounded-sm bg-red-600 px-10 py-2  uppercase text-white transition-all hover:bg-red-600/80'
+                className=' rounded-sm bg-oranges px-10 py-2  uppercase text-white transition-all hover:opacity-90'
               >
                 Mua ngay
               </Link>
