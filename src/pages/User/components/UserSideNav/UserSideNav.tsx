@@ -15,7 +15,7 @@ export default function UserSideNav() {
           <img src={getAvatarUrl(profile?.avatar)} alt='' className='h-full w-full object-cover' />
         </Link>
         <div className='flex-grow pl-4'>
-          <div className='mb-1 truncate font-semibold text-gray-600'>{profile?.email}</div>
+          <div className='mb-1 truncate break-all font-semibold text-gray-600 '>{profile?.email}</div>
           <Link to={path.profile} className='flex items-center capitalize text-gray-500'>
             <svg
               width={12}
