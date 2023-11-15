@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header-image': '/website/src/images/sg-11134004-7rbnd-ln2u4n7zfkag0a.png'
+        'header-image': "url('../src/images/sg-11134004-7rbnd-ln2u4n7zfkag0a.png')"
       },
       colors: {
         oranges: '#ee4d2d'

@@ -54,7 +54,7 @@ export default function Login() {
   })
 
   return (
-    <div className='bg-oranges'>
+    <div className='bg-header-image'>
       <Helmet>
         <title>Đăng nhập | Shopee Clone</title>
         <meta name='description' content='Đăng nhập vào dự án Shopee Clone' />

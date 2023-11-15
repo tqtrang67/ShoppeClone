@@ -60,7 +60,7 @@ export default function Register() {
   })
 
   return (
-    <div className='bg-oranges'>
+    <div className='bg-header-image '>
       <Helmet>
         <title>Đăng ký | TPT Shop</title>
         <meta name='description' content='Đăng ký tài khoản vào dự án TPT Shop' />
